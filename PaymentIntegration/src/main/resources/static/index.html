@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="/script.js"></script>
+</head>
+<body class="bg-dark">
+
+	<div id="name-from" class="bg-primary d-flex align-items-center">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+					<div class="input-group">
+					
+						    <input type="text"
+						    id="amount"
+                           placeholder="Enter your amount"
+                           
+                           autofocus
+                           class="form-control my-4">
+							
+							<div class="input-group-append mt-4">
+
+                        		<button onclick="paymentStart()" class="btn btn-dark" id="pay" >Pay</button>
+
+                           </div>
+					</div>
+				</div>
+				   
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
