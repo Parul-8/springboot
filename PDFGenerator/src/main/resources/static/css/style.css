@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  color: #484646;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: lightblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -3,19 +3,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:th="http://www.thymeleaf.org"
 	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	
+	
 
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <title>PDF Generator</title>
-
+<link rel="stylesheet" type="text/css" media="all" href="/static/css/style.css" th:href="@{/css/style.css}"></link>
 </head>
 <body>
 	<div class="container">
 		<form class="form" action="" th:action="@{/generate}" method="post" th:object="${data}">
-			<input type="text" id="title" name="title" placeholer="Title">
-			<textarea id="content" name="content" row="250">Content:</textarea>
-			<!-- <button type="submit" id="generatePdf">Generate</button> -->
+			<h4>PDF Generator</h4>
+			<input type="text" id="title" name="title" placeholder="Title">
+			<textarea id="content" name="content" rows="10" placeholder="Type your Text here.."></textarea>
 			<input type="submit" id="btn-login" value="Generate">
 		</form>
 
