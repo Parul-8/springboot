@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>PDF Generator</title>
+
+</head>
+<body>
+	<div class="container">
+		<form class="form" action="" th:action="@{/generate}" method="post" th:object="${data}">
+			<input type="text" id="title" name="title" placeholer="Title">
+			<textarea id="content" name="content" row="250">Content:</textarea>
+			<!-- <button type="submit" id="generatePdf">Generate</button> -->
+			<input type="submit" id="btn-login" value="Generate">
+		</form>
+
+
+	</div>
+
+</body>
+</html>
